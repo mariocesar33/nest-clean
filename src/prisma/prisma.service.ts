@@ -12,8 +12,8 @@ export class PrismaServise
     })
   }
 
-  // São metodos que o nest chama outomaticamente quando o modulo que usa o sercviço PrismaService
-  // for instanciado e for destoido.
+  // São métodos que o nest chama automaticamente quando o modulo que usa o serviço PrismaService
+  // for instanciado e for destruído.
   onModuleInit() {
     return this.$connect()
   }
