@@ -5,7 +5,7 @@ import { AuthModule } from './auth/auth.module'
 import { CreateAccountController } from './controllers/create-account.controller'
 import { PrismaService } from './prisma/prisma.service'
 import { envSchema } from './env'
-import { AuthenticateController } from './controllers/authenticate-controller'
+import { AuthenticateController } from './controllers/authenticate.controller'
 
 @Module({
   imports: [
