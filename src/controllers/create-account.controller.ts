@@ -9,7 +9,7 @@ import {
 import { hash } from 'bcryptjs'
 import { z } from 'zod'
 
-import { PrismaServise } from 'src/prisma/prisma.service'
+import { PrismaService } from 'src/prisma/prisma.service'
 import { ZodValidationPipe } from 'src/pipes/zod-validation-pipe'
 
 const createAccountBodySchema = z.object({
@@ -22,7 +22,7 @@ type CreateAccountBodySchema = z.infer<typeof createAccountBodySchema>
 
 @Controller('/accounts')
 export class CreateAccountController {
-  constructor(private prisma: PrismaServise) {}
+  constructor(private prisma: PrismaService) {}
 
   @Post()
   @HttpCode(201)
