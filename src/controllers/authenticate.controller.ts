@@ -1,6 +1,5 @@
 import { Controller, Post } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
-import { PrismaService } from 'src/prisma/prisma.service'
 
 // const createAccountBodySchema = z.object({
 //   name: z.string(),
