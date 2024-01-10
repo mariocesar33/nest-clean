@@ -17,7 +17,7 @@ import { Env } from 'src/env'
 
         return {
           signOptions: { algorithm: 'RS256' },
-          privatekey: Buffer.from(privatekey, 'base64'),
+          privateKey: Buffer.from(privatekey, 'base64'),
           publicKey: Buffer.from(publickey, 'base64'),
         }
       },
